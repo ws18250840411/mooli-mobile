@@ -1,0 +1,74 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+.mooli-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  width: 2em;
+  height: 1em;
+  font-size: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.mooli-switch--node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s cubic-bezier(0.3, 1.05, 0.4, 1.05);
+}
+.mooli-switch--load {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  line-height: 1;
+}
+.mooli-switch--checked {
+  background-color: #1989fa;
+}
+.mooli-switch--checked .mooli-switch--node {
+  transform: translateX(1em);
+}
+.mooli-switch--checked .mooli-switch--loading {
+  color: #1989fa;
+}
+.mooli-switch--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.mooli-switch--loading {
+  cursor: default;
+}

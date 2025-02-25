@@ -1,0 +1,43 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+.mooli-list {
+  overflow-y: auto;
+  height: 100%;
+}
+.mooli-list--loading,
+.mooli-list--finished-text,
+.mooli-list--error-text {
+  color: #969799;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+}
+.mooli-list--placeholder {
+  height: 0;
+  pointer-events: none;
+}

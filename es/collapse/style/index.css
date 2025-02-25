@@ -1,0 +1,120 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+[class*='mooli-hairline']::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid #ebedf0;
+  transform: scale(0.5);
+}
+.mooli-hairline,
+.mooli-hairline--top,
+.mooli-hairline--left,
+.mooli-hairline--right,
+.mooli-hairline--bottom,
+.mooli-hairline--surround,
+.mooli-hairline--top-bottom {
+  position: relative;
+}
+.mooli-hairline--top::after {
+  border-top-width: 1px;
+}
+.mooli-hairline--left::after {
+  border-left-width: 1px;
+}
+.mooli-hairline--right::after {
+  border-right-width: 1px;
+}
+.mooli-hairline--bottom::after {
+  border-bottom-width: 1px;
+}
+.mooli-hairline--top-bottom::after,
+.mooli-hairline-unset--top-bottom::after {
+  border-width: 1px 0;
+}
+.mooli-hairline--surround::after {
+  border-width: 1px;
+}
+.mooli-collapse-item {
+  position: relative;
+}
+.mooli-collapse-item--border::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: 0;
+  right: 16px;
+  left: 16px;
+  border-top: 1px solid #ebedf0;
+  transform: scaleY(0.5);
+}
+.mooli-collapse-item--title .mooli-cell--right-icon::before {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+.mooli-collapse-item--title::after {
+  right: 16px;
+  display: none;
+}
+.mooli-collapse-item--title--expanded .mooli-cell--right-icon::before {
+  transform: rotate(-90deg);
+}
+.mooli-collapse-item--title--expanded::after {
+  display: block;
+}
+.mooli-collapse-item--title--borderless::after {
+  display: none;
+}
+.mooli-collapse-item--title--disabled {
+  cursor: not-allowed;
+}
+.mooli-collapse-item--title--disabled,
+.mooli-collapse-item--title--disabled .mooli-cell--right-icon {
+  color: #c8c9cc;
+}
+.mooli-collapse-item--title--disabled:active {
+  background-color: #fff;
+}
+.mooli-collapse-item--wrapper {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  will-change: height;
+}
+.mooli-collapse-item--content {
+  padding: 12px 16px;
+  color: #969799;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+}

@@ -1,0 +1,60 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+.mooli-progress {
+  position: relative;
+  height: 4px;
+  background: #ebedf0;
+  border-radius: 4px;
+}
+.mooli-progress--csstransition .mooli-progress--portion {
+  width: 100%;
+  will-change: transform;
+  animation-timing-function: linear;
+}
+.mooli-progress--portion {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #1989fa;
+  border-radius: inherit;
+}
+.mooli-progress--pivot {
+  position: absolute;
+  top: 50%;
+  box-sizing: border-box;
+  min-width: 3.6em;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  word-break: keep-all;
+  background-color: #1989fa;
+  border-radius: 1em;
+  transform: translate(0, -50%);
+}

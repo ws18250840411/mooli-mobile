@@ -1,0 +1,85 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+.mooli-image-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none !important;
+}
+.mooli-image-preview .mooli-image {
+  min-width: 100%;
+}
+.mooli-image-preview .mooli-swiper {
+  width: 100%;
+  height: 100%;
+}
+.mooli-image-preview .mooli-swiper--container {
+  width: 100%;
+  height: 100%;
+}
+.mooli-image-preview--index {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  text-shadow: 0 1px 1px #323233;
+  transform: translate(-50%, 0);
+}
+.mooli-image-preview--overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.mooli-image-preview--close-icon {
+  position: absolute;
+  z-index: 1;
+  color: #c8c9cc;
+  font-size: 22px;
+  cursor: pointer;
+}
+.mooli-image-preview--close-icon:active {
+  color: #969799;
+}
+.mooli-image-preview--close-icon--top-left {
+  top: 16px;
+  left: 16px;
+}
+.mooli-image-preview--close-icon--top-right {
+  top: 16px;
+  right: 16px;
+}
+.mooli-image-preview--close-icon--bottom-left {
+  bottom: 16px;
+  left: 16px;
+}
+.mooli-image-preview--close-icon--bottom-right {
+  right: 16px;
+  bottom: 16px;
+}

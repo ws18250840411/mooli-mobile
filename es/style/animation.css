@@ -1,0 +1,190 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+@keyframes mooli-slide-up-enter {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes mooli-slide-up-leave {
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes mooli-slide-down-enter {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes mooli-slide-down-leave {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes mooli-slide-left-enter {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes mooli-slide-left-leave {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes mooli-slide-right-enter {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes mooli-slide-right-leave {
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes mooli-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mooli-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes mooli-circular {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120;
+  }
+}
+@keyframes mooli-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mooli-cursor-flicker {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.mooli-fade-enter,
+.mooli-fade-appear,
+.mooli-fade-exit-done {
+  opacity: 0;
+}
+.mooli-fade-appear-active,
+.mooli-fade-enter-active {
+  animation: 0.3s mooli-fade-in both ease-out;
+}
+.mooli-fade-enter-done,
+.mooli-fade-exit {
+  opacity: 1;
+}
+.mooli-fade-exit-active {
+  animation: 0.3s mooli-fade-out both ease-in;
+}
+.mooli-slide-up-enter-active {
+  animation: mooli-slide-up-enter 0.3s both ease-out;
+}
+.mooli-slide-up-leave-active {
+  animation: mooli-slide-up-leave 0.3s both ease-in;
+}
+.mooli-slide-down-enter-active {
+  animation: mooli-slide-down-enter 0.3s both ease-out;
+}
+.mooli-slide-down-leave-active {
+  animation: mooli-slide-down-leave 0.3s both ease-in;
+}
+.mooli-slide-left-enter-active {
+  animation: mooli-slide-left-enter 0.3s both ease-out;
+}
+.mooli-slide-left-leave-active {
+  animation: mooli-slide-left-leave 0.3s both ease-in;
+}
+.mooli-slide-right-enter-active {
+  animation: mooli-slide-right-enter 0.3s both ease-out;
+}
+.mooli-slide-right-leave-active {
+  animation: mooli-slide-right-leave 0.3s both ease-in;
+}
+@keyframes mooli-beat {
+  50% {
+    opacity: 0.2;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes mooli-clockwise {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes mooli-line {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.5);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}

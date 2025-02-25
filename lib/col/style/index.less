@@ -1,0 +1,19 @@
+.mooli-col {
+  float: left;
+  box-sizing: border-box;
+  min-height: 1px;
+}
+
+.generate-col(@n, @i: 1) when (@i =< @n) {
+  .mooli-col--@{i} {
+    width: (@i * 100% / 24);
+  }
+
+  .mooli-col--offset-@{i} {
+    margin-left: (@i * 100% / 24);
+  }
+
+  .generate-col(@n, (@i + 1));
+}
+
+.generate-col(24);

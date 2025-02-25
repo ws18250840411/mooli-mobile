@@ -1,0 +1,83 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+.mooli-search {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  background-color: #fff;
+}
+.mooli-search--content {
+  display: flex;
+  flex: 1;
+  padding-left: 12px;
+  background-color: #f7f8fa;
+  border-radius: 2px;
+}
+.mooli-search--content--round {
+  border-radius: 999px;
+}
+.mooli-search--left-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.mooli-search--label {
+  padding: 0 5px;
+  color: #323233;
+  font-size: 14px;
+  line-height: 34px;
+}
+.mooli-search .mooli-cell {
+  flex: 1;
+  padding: 5px 8px 5px 0;
+  background-color: transparent;
+}
+.mooli-search .mooli-cell--left-icon {
+  color: #969799;
+}
+.mooli-search--show-action {
+  padding-right: 0;
+}
+.mooli-search--action {
+  padding: 0 8px;
+  color: #323233;
+  font-size: 14px;
+  line-height: 34px;
+  cursor: pointer;
+  user-select: none;
+}
+.mooli-search--action:active {
+  background-color: #f2f3f5;
+}
+.mooli-search input::-webkit-search-decoration,
+.mooli-search input::-webkit-search-cancel-button,
+.mooli-search input::-webkit-search-results-button,
+.mooli-search input::-webkit-search-results-decoration {
+  display: none;
+}

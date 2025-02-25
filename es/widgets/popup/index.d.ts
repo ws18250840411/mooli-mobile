@@ -1,0 +1,61 @@
+import React from 'react';
+import { TransitionStatus } from 'react-transition-group/Transition';
+import { CSSTransitionProps } from 'react-transition-group/CSSTransition';
+export interface PopupProps extends React.HTMLAttributes<any> {
+    prefixCls?: string;
+    style?: React.CSSProperties;
+    className?: string;
+    rootClassName?: string;
+    rootStyle?: React.CSSProperties;
+    rootProps?: React.HTMLAttributes<any>;
+    visible?: boolean;
+    fixed?: boolean;
+    lazy?: boolean;
+    zIndex?: number;
+    duration?: number;
+    forceRender?: boolean;
+    transition?: Partial<CSSTransitionProps>;
+    destroy?: boolean;
+    getPosition?: (dom: HTMLElement) => {
+        top?: number | string;
+        left?: number | string;
+        right?: number | string;
+        bottom?: number | string;
+    };
+    disableMask?: boolean;
+    icon?: React.ReactNode;
+    mask?: boolean;
+    maskStyle?: React.CSSProperties;
+    maskProps?: React.HTMLAttributes<any>;
+    maskClassName?: string;
+    maskTransition?: Partial<CSSTransitionProps>;
+    component?: React.ElementType;
+    maskComponent?: React.ElementType;
+    rootComponent?: React.ElementType;
+    wrapContent?: (node: React.ReactNode) => React.ReactNode;
+}
+export declare class Popup extends React.Component<PopupProps, {}> {
+    static defaultProps: PopupProps;
+    protected transitionStatus: TransitionStatus;
+    protected inTransition: boolean;
+    protected inMaskTransition: boolean;
+    protected rootInstance: React.RefObject<any>;
+    protected popupInstance: React.RefObject<any>;
+    protected maskInstance: React.RefObject<any>;
+    constructor(props: PopupProps);
+    getRootDOM(): HTMLElement | null;
+    getPopupDOM(): HTMLElement | null;
+    getMaskDOM(): HTMLElement | null;
+    shouldComponentUpdate(nextProps: PopupProps): boolean;
+    ShowPopup(node: HTMLElement | undefined): void;
+    HidePopup(node: HTMLElement | undefined): void;
+    componentDidMount(): void;
+    protected onEnter({ onEnter }: CSSTransitionProps, isMask: boolean, appearing: boolean): void;
+    protected onEntered({ onEntered }: any, isMask: boolean, appearing: boolean): void;
+    protected onExit({ onExit }: CSSTransitionProps, isMask: boolean): void;
+    protected onExited({ onExited }: CSSTransitionProps, isMask: boolean): void;
+    protected renderPopupMask(): JSX.Element;
+    addEndListener: (_: any, cb: () => void) => void;
+    render(): JSX.Element;
+}
+export default Popup;

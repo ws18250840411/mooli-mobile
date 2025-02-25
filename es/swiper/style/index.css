@@ -1,0 +1,156 @@
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Color Palette
+*/
+/*
+ * Gradient Colors
+*/
+/*
+ * Component Colors
+*/
+/*
+ * Padding
+*/
+/*
+ * Font
+*/
+/*
+ * Animation
+*/
+/*
+ * Border
+*/
+.mooli-swiper {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+.mooli-swiper--container {
+  display: flex;
+}
+.mooli-swiper--container--loading {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
+  padding: 30px;
+}
+.mooli-swiper--vertical .mooli-swiper--container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mooli-swiper--indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+.mooli-swiper--vertical .mooli-swiper--indicators {
+  top: 50%;
+  bottom: auto;
+  left: 12px;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.mooli-swiper--dots {
+  width: 6px;
+  height: 6px;
+  background-color: #ebedf0;
+  border-radius: 100%;
+  opacity: 0.3;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+.mooli-swiper--dots:not(:last-child) {
+  margin-right: 6px;
+}
+.mooli-swiper--dots--is-selected {
+  background-color: #1989fa;
+  opacity: 1;
+}
+.mooli-swiper--vertical .mooli-swiper--dots:not(:last-child) {
+  margin-bottom: 6px;
+}
+.mooli-swiper--btn-prev {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 28px;
+}
+.mooli-swiper--btn-prev--disable {
+  cursor: default;
+  opacity: 0.3;
+}
+.mooli-swiper--btn-next {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%) rotate(180deg);
+  font-size: 28px;
+}
+.mooli-swiper--btn-next--disable {
+  cursor: default;
+  opacity: 0.3;
+}
+.mooli-swiper--thumbs {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+.mooli-swiper--progress {
+  position: relative;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  max-width: 270px;
+  width: calc(100% - 40px);
+  height: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mooli-swiper--progress--bar {
+  position: absolute;
+  background-color: #1bcacd;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}
+.mooli-swiper--scale .mooli-swiper-item {
+  min-width: 70%;
+  transition: 300ms;
+  transform: scale(0.8);
+}
+.mooli-swiper--scale .mooli-swiper-item.is-actived {
+  transition: 300ms;
+  transform: scale(1);
+}
+.mooli-swiper-item {
+  position: relative;
+  min-width: 100%;
+}
+.mooli-thumbs--thumb {
+  min-width: 20%;
+  max-height: 40px;
+  opacity: 0.2;
+  text-align: center;
+}
+.mooli-thumbs--thumb--actived {
+  opacity: 1;
+}

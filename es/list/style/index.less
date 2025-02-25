@@ -1,0 +1,19 @@
+@import '../../style/_variables.less';
+
+.mooli-list {
+  overflow-y: auto;
+  height: 100%;
+  &--loading,
+  &--finished-text,
+  &--error-text {
+    color: @list-text-color;
+    font-size: @list-text-font-size;
+    line-height: @list-text-line-height;
+    text-align: center;
+  }
+
+  &--placeholder {
+    height: 0;
+    pointer-events: none;
+  }
+}

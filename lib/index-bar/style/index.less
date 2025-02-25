@@ -1,0 +1,74 @@
+@import '../../style/_variables.less';
+
+.mooli-index-bar {
+  &--sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: @index-bar-sidebar-z-index;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &--sidebar-inner {
+    background-color: @index-bar-index-bg-color;
+    border-radius: @index-bar-index-border-radius;
+  }
+
+  &--index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 12px;
+    height: 16px;
+    border-radius: @index-bar-index-border-radius;
+    font-weight: @font-weight-bold;
+    font-size: @index-bar-index-font-size;
+    line-height: @index-bar-index-line-height;
+    &--active {
+      color: @index-bar-index-active-color;
+      background-color: @index-bar-index-active-bg-color;
+    }
+  }
+  &--tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    background: @index-bar-index-active-bg-color;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+    font-size: @index-bar-tips-font-size;
+    font-style: normal;
+    font-weight: 600;
+    color: @index-bar-index-active-color;
+  }
+}
+.mooli-index-anchor {
+  z-index: @index-anchor-z-index;
+  box-sizing: border-box;
+  padding: @index-anchor-padding;
+  color: @index-anchor-text-color;
+  font-weight: @index-anchor-font-weight;
+  font-size: @index-anchor-font-size;
+  line-height: @index-anchor-line-height;
+  background-color: @index-anchor-background-color;
+  &--sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: @index-anchor-sticky-text-color;
+    background-color: @index-anchor-sticky-background-color;
+  }
+}
