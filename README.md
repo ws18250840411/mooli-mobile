@@ -1,2 +1,0 @@
-# mooli-mobiles
-mobile
